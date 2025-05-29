@@ -446,13 +446,12 @@ display: none;
   flex-direction: column;
   margin-left: 0px;
   position: fixed;
-  left: 50%;
-  transform: translateX(-50%);
-  top:4px; 
+  left: 3%;
+  top:8px; 
 }
 
 .logo-container h1 {
-display: none;
+display: flex;
 }
 
 .logo-container p {
