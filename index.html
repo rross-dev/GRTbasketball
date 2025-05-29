@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#f0f0ff">
+    <title>GRT Basketball</title>
+    <meta name="description" content="Personalized basketball training with Coach George — improve your skills, boost confidence, and elevate your game. Sessions for all ages and skill levels.">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon2.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="GRT Basketball">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-icon.png">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white">
+    <meta property="og:image" content="/images/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="/images/twitter-image.jpg">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <script src="main.js"></script>
+  </head>
+
+  <body>
+    <div id="loading">
+    </div>
+    <div id="content" style="display: none;">
+  </div>
+
+  <header>
+        <nav>
+            <ul class="nav-menu-og">
+                <li>
+                  <a href="#home">HOME</a>
+              </li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#registration">REGISTRATION</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+   <div class="logo-container">
+      <div class="logo-content">
+        <div class="text-container">
+          <h1>GRT BASKETBALL</h1>
+        </div>
+      </div>
+    </div>
+  <div class="hamburger">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </div>
+  <ul class="nav-menu">
+    <div class="nav-menu-text">
+    <li class="nav-item"><a href="#home">HOME</a></li>
+    <li class="nav-item"><a href="#about">ABOUT</a></li>
+    <li class="nav-item"><a href="#registration">REGISTRATION</a></li>
+    <li class="nav-item"><a href="#contact">CONTACT</a></li>
+  </div>
+  </ul>
+  </nav>
+    </header>
+
+    <main>
+
+      <section id="home" class="home">
+        <img src="/images/logo3.png" id="Scott Reid Foundation" class="main-page-logo" alt="Scott Reid Foundation">
+        <img src="/images/logo2.jpg" id="Scott Reid Foundation" class="main-page-phone-logo" alt="Scott Reid Foundation">
+      </section>
+
+      <section id="about" class="about">
+        <div class="half">
+        <img src="/images/about.jpg" id="Demond George" class="demond-photo" alt="Demond George GRT Basketball Training">
+      </div>
+      <div class="half2">
+        <h1>Game Ready Training</h1>
+        <img src="/images/about.jpg" id="Demond George" class="demond-photo-mobile" alt="Demond George GRT Basketball Training">
+        <p>
+          Coach Demond George is a passionate basketball trainer dedicated to helping players improve their skills, confidence, and game IQ. With years of playing at a high level and coaching experience, he offers personalized training sessions focused on fundamentals and advanced techniques for all skill levels. Whether you're just starting out or looking to take your game to the next level, Demond is here to help you reach your full potential.
+        </p>
+      </div>
+      </section>
+
+      
+
+
+      <section id="registration" class="signup">
+
+        <!--<img src="/images/GRT_header.jpg" id="GRT Basketball" class="grt-header" alt="GRT Basketball">-->
+
+        <div class="tally-container">
+        
+          <iframe data-tally-src="https://tally.so/embed/mZKYXz?alignLeft=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="1224" frameborder="0" marginheight="0" marginwidth="0" title="Registration"></iframe>
+<script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
+
+
+  </div>
+      </section>
+
+      
+
+      <section id="contact" class="contact">
+        <h1>Contact Us</h1>
+        <p>GRTbasketball@gmail.com</p>
+        <p>
+          <a href="https://www.facebook.com/grtbasketball/" target="_blank">
+          <img src="images/icons/fb.png" class="fb"></a>
+          <a href="https://www.instagram.com/game.readytraining/" target="_blank">
+          <img src="images/icons/insta.png" class="insta"></a>
+        </p>
+      </section>
+
+    </main>
+
+  </body>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        let currentIndex = 0;
+        const slides = document.querySelectorAll('.carousel-item');
+
+        function showSlide(index) {
+            slides.forEach(slide => {
+                slide.style.transform = `translateX(-${index * 100}%)`;
+            });
+        }
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % slides.length;
+            showSlide(currentIndex);
+        }
+
+        // Automatically transition between slides
+        setInterval(nextSlide, 3000); // Change slide every 3 seconds
+    });
+</script>
+  <script src="hamburger.js"></script>
+  <script src="main.js"></script>
+</html>
