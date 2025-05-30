@@ -44,3 +44,34 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(section);
     });
 });
+
+//header section identifier
+
+document.addEventListener("DOMContentLoaded", function () {
+    const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll(".nav-menu a, .nav-menu-og a");
+
+    function onScroll() {
+      let currentSectionId = "";
+
+      sections.forEach((section) => {
+        const rect = section.getBoundingClientRect();
+        const triggerLine = window.innerHeight - 275; // 50px from bottom
+        if (rect.top <= triggerLine && rect.bottom >= triggerLine) {
+          currentSectionId = section.id;
+        }
+      });
+
+      if (currentSectionId) {
+        navLinks.forEach((link) => {
+          link.classList.remove("active");
+          if (link.getAttribute("href") === `#${currentSectionId}`) {
+            link.classList.add("active");
+          }
+        });
+      }
+    }
+
+    window.addEventListener("scroll", onScroll);
+    onScroll(); // trigger on load
+  });

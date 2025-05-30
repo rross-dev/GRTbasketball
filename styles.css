@@ -239,7 +239,14 @@ header {
 
 .nav-menu-og{
   margin-left: 20px;
+  transition: color 0.3s ease;
 }
+
+.nav-menu a.active,
+.nav-menu-og a.active {
+  color: black;
+}
+
 nav ul {
   list-style-type: none;
   margin: 0;
@@ -268,7 +275,6 @@ nav ul li a {
 nav ul li a:hover{
   outline: none;
 cursor: pointer;
-  color: black;
 }
 
 .dropdown {
