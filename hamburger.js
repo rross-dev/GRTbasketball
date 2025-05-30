@@ -5,20 +5,19 @@ const navMenu = document.querySelector(".nav-menu");
 const body = document.body;
 
 function openMenu() {
-  scrollPosition = window.scrollY;
   body.classList.add("lock-scroll");
-  body.style.top = `-${scrollPosition}px`;
   hamburger.classList.add("active");
   navMenu.classList.add("active");
+  overlay.classList.add("active");
 }
 
 function closeMenu() {
   body.classList.remove("lock-scroll");
-  body.style.top = "";
-  window.scrollTo(0, scrollPosition);
   hamburger.classList.remove("active");
   navMenu.classList.remove("active");
+  overlay.classList.remove("active");
 }
+
 
 hamburger.addEventListener("click", () => {
   if (hamburger.classList.contains("active")) {
