@@ -584,7 +584,7 @@ nav ul li a.active:hover {
   flex-direction: column;
   background-color: #FF5500;
   width: 45vw;
-  transition: 0.3s;
+  transition: 0.3s ease;
   margin: 0;
 }
 
