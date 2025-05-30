@@ -368,26 +368,6 @@ cursor: pointer;
   display: none;
 }
 
-.menu-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100vw;
-  background: rgba(255, 255, 255, 0.3); /* optional: white haze */
-  backdrop-filter: blur(2px); /* this does the blurring */
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.2s ease;
-  z-index: 9; /* Make sure it's behind your nav menu */
-}
-
-.menu-overlay.active {
-  opacity: 1;
-  pointer-events: auto;
-}
-
-
 footer {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
