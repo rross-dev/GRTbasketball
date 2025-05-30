@@ -213,13 +213,17 @@ header {
 }
 
 .contact{
-   height: auto;
+   height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #f4f4f4;
   flex-direction: column;
-  padding: 50px;
+}
+
+.contact-logo{
+  width: 200px;
+  margin-bottom: 17px;
 }
 
 .contact h1{
@@ -743,8 +747,7 @@ nav ul li a.active:hover {
 }
 
 .contact{
-  padding: 50px;
-   height: auto;
+   height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -908,8 +911,7 @@ nav ul li a.active:hover {
 }
 
 .contact{
-  padding: 50px;
-   height: auto;
+   height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1068,8 +1070,7 @@ nav ul li a.active:hover {
 }
 
 .contact{
-  padding: 50px;
-   height: auto;
+   height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
