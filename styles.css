@@ -88,7 +88,6 @@ header {
   justify-content: center;
   align-items: center;
   background-color: #f4f4f4;
-  padding-bottom: 10vh;
 }
 
 .about p{
@@ -785,163 +784,8 @@ nav ul li a.active:hover {
     height: auto;
   }
 
-    .about{
-  height: auto;
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #f4f4f4;
-  padding-bottom: 50px;
-  padding-top: 0;
-  text-align: left;
-}
-
-.about p{
-  width: auto;
-  font-size: 0.9rem;
-  text-align: center;
-  margin-left: 0;
-  padding-left: 10% ;
-  padding-right: 10%;
-}
-
-.about h1{
-  margin-left: 0;
-  text-align: center;
-  font-size: 1.3rem;
-  padding-bottom: 30px;
-  padding-top: 30px;
-}
-
-.demond-photo{
-  display: none;
-}
-
-.demond-photo-mobile{
-  display: flex;
-  width: 40vw;
-  padding-bottom: 30px;
-}
-
-.signup{
-  padding-top: 1px;
-  height: auto;
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #f4f4f4;
-  padding-bottom: 50px;
-  flex-direction: column-reverse;
-}
-
-.half{
-  display: flex;
-  flex-direction: none;
-  flex:0;
-  justify-content: center;
-  align-items: flex-end;
-}
-
-.half2{
-  display: flex;
-  flex-direction: none;
-  flex:1;
-  justify-content: center;
-  align-items: center;
-}
-
-.left-align {
-  align-self: flex-start; /* Align this item to the left */
-}
-
-
-.signup p{
-  margin: 5%;
-    font-size: 0.9rem;
-  width: auto;
-  text-align: left;
-  padding-left: 0;
-}
-
-.signup h1{
-  margin-top: 20px;
-  margin-left: 5%;
-  margin-bottom: -25px;
-  text-align: left;
-  font-size: 1.3rem;
-  padding-left: 0;
-}
-
-.signup-btn {
-  font-family: 'Poppins', sans-serif;
-  margin-top:25px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 10px 25px;
-  background-color: #569546;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  color: white;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-.signup-btn:hover{
-  box-shadow: 0 0px 4px rgba(86, 149, 70, 0.4); 
-}
-
-.carousel {
-      width: 100vw;
-      overflow: hidden;
-      margin: 0 auto;
-      justify-content: center;
-      align-items: center;
-    }
-    
-.carousel-inner {
-    display: flex;
-    transition: transform 0.5s ease;
-}
-
-.carousel-item {
-    flex: 0 0 100%;
-    max-width: 100%;
-}
-
-.carousel-item img {
-    width: 100%;
+  .home{
     height: auto;
-}
-
-.contact{
-   height: 50vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #f4f4f4;
-  flex-direction: column;
-}
-
-.contact h1{
-  margin-bottom: 0;
-}
-
-
-}
-
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
-  /* CSS rules for large screens */
-  .main-page-logo{
-      display: flex;
-      width: 100vw;
-    height: auto;
-    }
-
-  .main-page-phone-logo{
-    display: none;
-    
   }
 
     .about{
@@ -957,7 +801,7 @@ nav ul li a.active:hover {
 }
 
 .about p{
-  width: auto;
+  width: 66%;
   font-size: 0.9rem;
   text-align: center;
   margin-left: 0;
@@ -968,7 +812,7 @@ nav ul li a.active:hover {
 .about h1{
   margin-left: 0;
   text-align: center;
-  font-size: 1.3rem;
+  font-size: 3rem;
   padding-bottom: 30px;
   padding-top: 30px;
 }
@@ -1075,7 +919,175 @@ nav ul li a.active:hover {
 }
 
 .contact{
-   height: 50vh;
+   height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+  flex-direction: column;
+}
+
+.contact h1{
+  margin-bottom: 0;
+}
+ .tally-container{
+    width: 75%;
+  }
+
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  /* CSS rules for large screens */
+  .tally-container{
+    width: 75%;
+  }
+
+  .main-page-logo{
+      display: flex;
+      width: 70vw;
+    height: auto;
+    }
+
+  .main-page-phone-logo{
+    display: none;
+  }
+
+  .home{
+    height: 70vh;
+  }
+
+    .about{
+  height: auto;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+  padding-bottom: 50px;
+  padding-top: 0;
+  text-align: left;
+}
+
+.about p{
+  width: 66%;
+  font-size: 0.9rem;
+  text-align: center;
+  margin-left: 0;
+  padding-left: 10% ;
+  padding-right: 10%;
+}
+
+.about h1{
+  margin-left: 0;
+  text-align: center;
+  font-size: 3rem;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+.demond-photo{
+  display: none;
+}
+
+.demond-photo-mobile{
+  display: flex;
+  width: 40vw;
+  padding-bottom: 30px;
+}
+
+.signup{
+  padding-top: 1px;
+  height: auto;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+  padding-bottom: 50px;
+  flex-direction: column-reverse;
+}
+
+.half{
+  display: flex;
+  flex-direction: none;
+  flex:0;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.half2{
+  display: flex;
+  flex-direction: none;
+  flex:1;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-align {
+  align-self: flex-start; /* Align this item to the left */
+}
+
+
+.signup p{
+  margin: 5%;
+    font-size: 0.9rem;
+  width: auto;
+  text-align: left;
+  padding-left: 0;
+}
+
+.signup h1{
+  margin-top: 20px;
+  margin-left: 5%;
+  margin-bottom: -25px;
+  text-align: left;
+  font-size: 1.3rem;
+  padding-left: 0;
+}
+
+.signup-btn {
+  font-family: 'Poppins', sans-serif;
+  margin-top:25px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 25px;
+  background-color: #569546;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.signup-btn:hover{
+  box-shadow: 0 0px 4px rgba(86, 149, 70, 0.4); 
+}
+
+.carousel {
+      width: 100vw;
+      overflow: hidden;
+      margin: 0 auto;
+      justify-content: center;
+      align-items: center;
+    }
+    
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+}
+
+.contact{
+   height: 30vh;
   display: flex;
   justify-content: center;
   align-items: center;
